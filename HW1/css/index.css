@@ -32,6 +32,21 @@ li:nth-child(5n+5):hover {
     background-color: rgb(0, 85, 255);
 }
 
+p.new::before {
+    content: '« ';
+}
+
+p.new.back::after {
+    content: ' »';
+}
+
+div.first_letter::before {
+    content: "Lorem ";
+}
+
+div.first_letter::first-letter {
+    color: #0081b5;
+}
 .block_links {
     background: repeating-linear-gradient(45deg, #7fffd4 10%, #f0ffff 30%);
 }
@@ -55,7 +70,7 @@ div.block_links a:last-child::selection {
     color: rgb(255, 255, 0);
 }
 
-div.block_links .border:nth-child(2n):hover{
+div.block_links .border:nth-child(2n):hover {
     background: #fff;
     border: 10px solid;
     border-color: rgb(111, 0, 0) rgb(255, 0, 0) rgb(255, 0, 0) rgb(111, 0, 0);
