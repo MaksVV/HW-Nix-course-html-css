@@ -18,3 +18,109 @@ li:nth-child(3n+3) {
 li:nth-child(5n+5):hover {
     background-color: rgb(0, 85, 255);
 }
+
+.block_links {
+    background: repeating-linear-gradient(45deg, #7fffd4 10%, #f0ffff 30%);
+}
+
+.block_links .violet {
+    color: rgb(191, 40, 191);
+
+}
+
+div.block_links .violet:first-child{
+    background: radial-gradient(at center bottom, #55ddff, #0081b5);
+}
+
+div.block_links a:last-child::selection {
+    color: #ff0000;
+    text-shadow: 0 0 1px #ff0000;
+    background: rgb(0, 255, 81);
+}
+
+.block_links ~ a:visited {
+    color: rgb(255, 255, 0);
+}
+
+div.block_links .border:nth-child(2n):hover{
+    background: #fff;
+    border: 10px solid;
+    border-color: rgb(111, 0, 0) rgb(255, 0, 0) rgb(255, 0, 0) rgb(111, 0, 0);
+    border-top-left-radius: 100px 20px;
+    border-bottom-right-radius: 100px 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.colors a{
+    color: #000;
+}
+
+.colors a:hover:first-of-type {
+    color: rgb(255, 0, 0);
+}
+
+.colors a:hover:nth-of-type(2) {
+    color: rgb(0, 128, 0);
+}
+
+.colors a:hover:last-of-type {
+    color: rgb(0, 0, 255);
+}
+
+.colors a:first-of-type::selection {
+    background-color: rgb(255, 0, 0);
+}
+
+.colors a:nth-of-type(2)::selection {
+    background-color: rgb(0, 128, 0);
+}
+
+.colors a:last-of-type::selection {
+    background-color: rgb(0, 0, 255);
+}
+
+.colors p:first-of-type:first-letter {
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+}
+
+.colors p:nth-of-type(2):first-letter {
+    color: rgb(0, 128, 0);
+    font-size: 24px;
+}
+
+.colors p:last-of-type:first-letter {
+    color: rgb(0, 0, 255);
+    font-size: 24px;
+}
+
+.colors p:first-of-type::selection {
+    background-color: rgb(255, 0, 0);
+}
+
+.colors p:nth-of-type(2)::selection {
+    background-color: rgb(0, 128, 0);
+}
+
+.colors p:last-of-type::selection {
+    background-color: rgb(0, 0, 255);
+}
+
+.colors p:first-of-type:hover {
+    color: rgb(255, 0, 0);
+}
+
+.colors p:nth-of-type(2):hover {
+    color: rgb(0, 128, 0);
+}
+
+.colors p:last-of-type:hover {
+    color: rgb(0, 0, 255);
+}
+
+.colors p:first-of-type:hover:first-letter,
+.colors p:last-of-type:hover:first-letter,
+.colors p:nth-of-type(2):hover:first-letter {
+    color: rgb(0, 0, 0);
+}
