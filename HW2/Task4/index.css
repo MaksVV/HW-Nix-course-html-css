@@ -1,0 +1,114 @@
+.container {
+    padding: 25px 25px 10px 10px;
+    border: 2px solid blue;
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    gap: 25px 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: row;
+}
+
+.blue {
+    height: 150px;
+    border: 2px solid blue;
+    grid-column: 1 / 3 ;
+    grid-row: 1;
+    background-color: rgb(134, 134, 212);
+}
+
+.yellow {
+    border: 2px solid blue;
+    grid-column: 1 ;
+    grid-row: 4;
+    background-color: rgb(223, 211, 38);
+}
+
+.green {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border: 2px solid blue;
+    grid-column: 2 ;
+    grid-row: 2 / 5;
+    gap: 15px;
+    background-color: rgb(18, 196, 72);
+    padding: 15px;
+}
+
+.light-blue,
+.orange,
+.red {
+    width: 90%;
+    border: 2px solid blue;
+}
+
+.light-blue {
+    justify-self: end;
+    grid-column: 1 ;
+    grid-row: 2 / 6;
+    background-color: rgb(108, 177, 255);
+}
+
+.orange {
+    justify-self: start;
+    grid-column: 2 ;
+    grid-row: 2;
+    background-color: rgb(248, 172, 42);
+}
+
+.red {
+    justify-self: end;
+    grid-column: 2 ;
+    grid-row: 5;
+    background-color: rgb(217, 5, 5);
+    margin-bottom: 7px;
+}
+
+@media (max-width: 700px) { 
+    .container {
+        padding: 25px;
+        row-gap: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .blue {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .green {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column: 1 ;
+        grid-row: 2;
+        padding: 0 25px;
+    }
+
+    .red {
+        display: none;
+    }
+
+    .yellow {
+        grid-column: 1 ;
+        grid-row: 3;
+    }
+
+    .light-blue {
+        justify-self: start;
+        grid-column: 1 ;
+        grid-row: 1;
+        height: 50%;
+    }
+
+    .orange {
+        justify-self: start;
+        grid-column: 3 ;
+        grid-row: 1;
+        height: 50%;
+    }
+}
