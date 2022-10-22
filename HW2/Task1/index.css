@@ -1,0 +1,64 @@
+body {
+    width: 600px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.orange,
+.purple,
+.green,
+.blue {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: 5px 0;
+}
+
+.orange div,
+.purple div,
+.green div,
+.blue div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: solid #000;
+}
+
+.orange {
+    justify-content: flex-end;
+}
+
+.orange div {
+    background-color: rgb(255, 165, 0);
+}
+
+.purple {
+    justify-content: start;
+}
+
+.purple div {
+    background-color: rgb(199, 0, 199);
+}
+
+.green {
+    justify-content: center;
+}
+
+.green div {
+    background-color: rgb(63, 199, 0);
+}
+
+.blue {
+    justify-content: center;
+    gap: 5px;
+}
+
+.blue div {
+    background-color: rgb(0, 116, 199);
+    flex-grow: 1;
+}
